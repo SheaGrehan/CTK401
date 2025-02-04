@@ -1,0 +1,45 @@
+h1 {
+    color: orangered;
+    background-color: blueviolet
+}
+
+h2 {
+    color: red;
+    background-color:aquamarine
+}
+
+h3 {
+    color: purple;
+    background-color: blanchedalmond;
+}
+
+p {
+    color: blue;
+    background-color: antiquewhite;
+}
+
+  a:link {
+    color: red
+  }
+  
+  a:visited {
+    color: green;
+  }
+  
+  a:active {
+    color: #00ffff;
+  }
+  
+  a:hover {
+    color: #ffff00;
+  }        
+
+.span_emphasis {
+    color: red;
+    background-color: yellow;
+}
+
+#div1 {
+    color: yellow;
+    background-color: black;
+}
