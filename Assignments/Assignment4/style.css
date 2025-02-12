@@ -1,0 +1,70 @@
+body {
+  font-family: Helvetica, Arial, sans-serif;
+  background-image: url("galaxy.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+h1 {
+    color: orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h2 {
+    color: orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+h3 {
+    color: orange;
+    font-style: italic;
+    font-weight: normal;
+}
+
+p {
+    color: blue;
+    background-color: antiquewhite;
+}
+
+  a:link {
+    color: red
+  }
+  
+  a:visited {
+    color: green;
+  }
+  
+  a:active {
+    color: #00ffff;
+  }
+  
+  a:hover {
+    color: #ffff00;
+  }        
+
+.span_emphasis {
+    color: red;
+    background-color: yellow;
+}
+
+#div1 {
+    color: yellow;
+    background-color: black;   
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+} 
+
+.imgbox {
+    border: 20px solid black;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fffb00;
+}
