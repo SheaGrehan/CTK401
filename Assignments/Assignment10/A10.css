@@ -1,0 +1,141 @@
+body {
+  background-color: #999999;
+  margin: 0;
+}
+
+#wrapper {
+  margin: 24px auto;
+  width: 1200px;
+  border: 1px solid black;
+  padding: 24px;
+  background-color: #ffffff;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+/*NAVIGATION*/
+.sidebarleft{
+  grid-column: span 3;
+  display: inline-block;
+}
+
+h1 {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bold;
+  text-align: center;
+  background-color: #d4d4d4;
+  color: rgb(0, 0, 0);
+  padding: 15px;
+  margin: 0px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+h1 a{
+  text-decoration: none;
+  color:rgb(0, 0, 0)
+}
+
+nav ul {
+  list-style-type: none; /* none, disc, circle, square */
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  grid-column: span 3;
+}
+
+nav li a {
+  border: none;
+  padding: 15px;
+  margin: 10px;
+  margin-left: 0;
+  width: 200px;
+  background-color: #d4d4d4;
+  color: #000000;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+}
+
+nav li a:hover {
+  background-color: #9a9a9a;
+  display: inline-block;
+  color: #000000;
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  transition: all .25s;
+}
+
+.socialbutton {
+margin: 10px;
+width: 200px;
+display: inline-block;
+text-align: center;
+}
+
+.socialbutton a{
+  color: #5c5c5c;
+  text-decoration: none;
+  font-size: 3em;
+  margin: 8px;
+}
+
+.socialbutton a:hover {
+  color: #000000;
+  text-decoration: none;
+  font-size: 3em;
+  margin: 8px;
+}
+
+/*MAIN PAGE*/
+
+.mainpageright {
+  grid-column: span 9;
+  padding: 15px;
+  margin: 0px;
+}
+
+.image-grid {
+  --gap: 16px; /*Gap between items*/
+  --num-cols: 2; /*Number of columns in the grid*/
+  --row-height: 300px; /*Height of each row*/
+
+  box-sizing: border-box;
+  padding: var(--gap);
+
+  grid-column: span 9; /*Span 9 columns*/
+  display: grid;
+  grid-template-columns: repeat(var(--num-cols), 1fr); /* Create a grid with 2 columns */
+  grid-auto-rows: var(--row-height); /*Set an unlimited number of 300px rows in the grid. Sets the height of each row */
+  gap: var(--gap); /*Set the gap between each item in the grid */
+}
+
+.image-grid > img{
+  width: 100%;
+  height: 100%; /*Contains the image in their containers*/
+  object-fit: cover; /*Images maintain their aspect ratio within their containers*/
+}
+
+.image-grid-col-2{
+  grid-column: span 2; /*Span 2 columns, use this for a feature image*/
+}
+
+.image-grid-row-2{
+  grid-row: span 2; /*Span 2 rows, use this for a feature image*/
+}
+
+/*Anything under 1024px*/
+@media screen and (max-width: 1024px) {
+  .image grid {
+    --num-cols: 1; /*Change the number of columns to 1*/
+    --row-height: 200px; /*Change the height of each row to 200px*/
+  }
+}
