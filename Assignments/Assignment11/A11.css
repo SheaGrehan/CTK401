@@ -150,7 +150,7 @@ text-align: center;
 
 /*Anything under 1024px*/
 @media screen and (max-width: 1024px) {
-  .image grid {
+  .image-grid {
     --num-cols: 1; /*Change the number of columns to 1*/
     --row-height: 200px; /*Change the height of each row to 200px*/
   }
